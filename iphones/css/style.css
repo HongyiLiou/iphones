@@ -1,0 +1,197 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  font-family: 微軟正黑體;
+  vertical-align: top;
+  user-select: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #CFCFCF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h4 {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 2px;
+}
+
+.phonename {
+  margin-top: 2px;
+}
+
+.phone {
+  width: 210px;
+  padding: 10px;
+  background-color: #222;
+  border: solid 5px;
+  border-radius: 33px;
+  border-bottom-color: #666;
+  border-right-color: #666;
+  border-top-color: #888;
+  border-left-color: #888;
+  transition: 0.5s;
+  left: 0px;
+  box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.7);
+}
+
+.top {
+  height: 60px;
+}
+.top .earphone {
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  transform: translate(-50%, -90%);
+}
+.top .camera {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  transform: translate(-400%, -70%);
+}
+.top .earphone, .top .camera {
+  border: solid 1px;
+  border-bottom-color: white;
+  border-right-color: white;
+  border-top-color: #666;
+  border-left-color: #666;
+  background-color: #333;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.screen {
+  height: 300px;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.screen .pages {
+  border: solid 0px;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  font-size: 0px;
+  transition: 0.5s;
+  left: 0px;
+}
+.screen .pages .page {
+  border: solid 0px;
+  font-size: initial;
+  display: inline-block;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  white-space: normal;
+}
+.screen .pages .page1 {
+  background: url("https://i.gyazo.com/b0f0952aa3d224f9a298e92fd76d522e.png") no-repeat center center;
+  background-size: 110%;
+}
+.screen .pages .page2 {
+  color: #16BAAA;
+  background: url("https://i.gyazo.com/9df0ebae9ed1c9245ebb2478b9415483.png") no-repeat center center;
+  background-size: 120%;
+}
+.screen .pages .page2 h2 {
+  text-shadow: 1px 1px black;
+  margin: 5px;
+  font-size: 20px;
+}
+.screen .pages .page2 p {
+  margin-top: 30px;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+.screen .pages .page3 {
+  color: #945EB5;
+  background: url("https://i.gyazo.com/c0831567e19fb6e55ae4fe1e9d280292.jpg") no-repeat center center;
+  background-size: 100%;
+}
+.screen .pages .page3 h2 {
+  text-shadow: 1px 1px black;
+  margin: 5px;
+  font-size: 20px;
+}
+.screen .pages .page3 p {
+  margin-top: 30px;
+  color: #eee;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.bottom {
+  height: 60px;
+}
+.bottom .button {
+  width: 40px;
+  height: 40px;
+  border: solid 2px;
+  border-top-color: #555;
+  border-left-color: #555;
+  border-right-color: #777;
+  border-bottom-color: #777;
+  border-radius: 100%;
+  color: #999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center;
+  font-size: 35px;
+  font-weight: 100;
+  line-height: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.bottom .button:hover {
+  transition: 0.05s;
+  color: #555;
+  background-color: #111;
+  border-top-color: #333;
+  border-left-color: #333;
+  border-right-color: #555;
+  border-bottom-color: #555;
+}
+.bottom .button:active {
+  transition: 0.05s;
+  color: #444;
+  background-color: #000;
+  border-top-color: #333;
+  border-left-color: #333;
+  border-right-color: #444;
+  border-bottom-color: #444;
+}
+
+.status, .phonename {
+  color: black;
+}
+
+.buttons {
+  bottom: 10px;
+  position: absolute;
+}
+.buttons button {
+  background-color: transparent;
+  border: solid 1px rgba(17, 17, 17, 0.2);
+  color: black;
+  padding: 7px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background-color: #888;
+  color: #fff;
+}
